@@ -1,0 +1,11 @@
+
+<body bgcolor="gray">
+	<h1> Affichage des informations</h1>
+{% for item in result %}
+ <b>username :</b> {{item.username}}</br>
+ <b>age :</b> {{item.age}}</br>
+ <b>famille :</b> {{item.famille}}</br>
+ <b>race :</b> {{item.race}}</br>
+ <b>nourriture :</b> {{item.nourriture}}</br>
+{% endfor %}
+</body>

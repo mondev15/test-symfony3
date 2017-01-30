@@ -116,4 +116,28 @@ class User extends BaseUser
     {
         return $this->race;
     }
+
+    /**
+     * Set nourriture
+     *
+     * @param string $nourriture
+     *
+     * @return User
+     */
+    public function setNourriture($nourriture)
+    {
+        $this->nourriture = $nourriture;
+
+        return $this;
+    }
+
+    /**
+     * Get nourriture
+     *
+     * @return string
+     */
+    public function getNourriture()
+    {
+        return $this->nourriture;
+    }
 }

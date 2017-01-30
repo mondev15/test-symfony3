@@ -19,9 +19,96 @@ class User extends BaseUser
      */
     protected $id;
 
+    /**
+     * @ORM\Column(type="integer")
+     */
+    protected $age;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $famille;
+
+    /**
+     * @ORM\Column(type="string")
+     */
+    protected $race;
+
     public function __construct()
     {
         parent::__construct();
         // your own logic
+    }
+
+    /**
+     * Set age
+     *
+     * @param integer $age
+     *
+     * @return User
+     */
+    public function setAge($age)
+    {
+        $this->age = $age;
+
+        return $this;
+    }
+
+    /**
+     * Get age
+     *
+     * @return integer
+     */
+    public function getAge()
+    {
+        return $this->age;
+    }
+
+    /**
+     * Set famille
+     *
+     * @param string $famille
+     *
+     * @return User
+     */
+    public function setFamille($famille)
+    {
+        $this->famille = $famille;
+
+        return $this;
+    }
+
+    /**
+     * Get famille
+     *
+     * @return string
+     */
+    public function getFamille()
+    {
+        return $this->famille;
+    }
+
+    /**
+     * Set race
+     *
+     * @param string $race
+     *
+     * @return User
+     */
+    public function setRace($race)
+    {
+        $this->race = $race;
+
+        return $this;
+    }
+
+    /**
+     * Get race
+     *
+     * @return string
+     */
+    public function getRace()
+    {
+        return $this->race;
     }
 }

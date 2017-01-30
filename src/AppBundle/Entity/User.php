@@ -26,7 +26,7 @@ class User extends BaseUser
 
     /**
      * @ORM\Column(type="string")
-     */
+    */
     protected $famille;
 
     /**

@@ -34,6 +34,11 @@ class User extends BaseUser
      */
     protected $race;
 
+    /**
+    * @ORM\Column(type="string")
+    */
+    protected $nourriture;
+
     public function __construct()
     {
         parent::__construct();

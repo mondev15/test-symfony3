@@ -5,7 +5,7 @@ Manuel D'utilisation
 =============================
 
 1.Démarrer le serveur ( php bin/console server:start)
-2. saisir http://localhost:8000/accueil dans un onglet
+2. saisir http://localhost:8000/home dans un onglet
 	Deux menus apparaissent (s'enregistrer et se connecter)
 3. après s'être enregistré , vous recevez une notification
 4. après s'être connecté, vous avez la possibilité de vous déconnecter

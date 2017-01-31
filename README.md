@@ -11,7 +11,10 @@ Manuel D'utilisation
 4. après s'être connecté, vous avez la possibilité de vous déconnecter
 
 5. afficher le contenu de la base de donnée http::/localhost/display
+   (exigence non traitée en entier{tableau affiché mais pas editable})
 
+6. ajouter les amis et modifications des champs
+   (non traité : bugs sur les collections array ou list{code commenté dans le controlleur ControllerUser.php})
 
 [ou encore]
 

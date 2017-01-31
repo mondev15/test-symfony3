@@ -1,0 +1,22 @@
+<h1 align="center"> Listes des bonobos</h1>
+
+<table width="40%">
+	<tr bgcolor="silver">
+		<th> username</th>
+		<th> age</th>
+		<th> famille</th>
+		<th> race</th>
+		<th> nourriture</th>
+	</tr>	
+
+{% for item in result %}
+ 
+ <tr>
+  	<td>{{item.username}}</td> 
+ 	<td>{{item.age}} </td>
+ 	<td>{{item.famille}}</td> 
+ 	<td>{{item.race}} </td>
+ 	<td>{{item.nourriture}} </td>
+</tr>
+{% endfor %}
+</table>

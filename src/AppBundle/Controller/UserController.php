@@ -34,4 +34,23 @@ class UserController extends Controller{
    // the result is in $user and will be printed  in twig
    return $this->render('default/user.html.twig', array('result' => $userData));
    }
+
+
+    /**
+      * @Route("/display", name="display")
+    */
+       public function displayAction()
+    {
+        $userRepository = $this->getDoctrine()
+                                ->getRepository('AppBundle\Entity\User');
+        $userData = $userRepository->findAll();
+
+      if (!$userData) {
+          throw $this->createNotFoundException(
+              'Il n\'existe pas d\'utilisateur ayant pour identifiant '.$id
+          );
+      }
+   // the result is in $user and will be printed  in twig
+   return $this->render('default/display.html.twig', array('result' => $userData));
+   }
  }

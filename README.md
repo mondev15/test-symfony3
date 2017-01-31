@@ -10,6 +10,8 @@ Manuel D'utilisation
 3. après s'être enregistré , vous recevez une notification
 4. après s'être connecté, vous avez la possibilité de vous déconnecter
 
+5. afficher le contenu de la base de donnée http::/localhost/display
+
 
 [ou encore]
 

@@ -1,9 +1,10 @@
 <h1 align="center"> Listes des bonobos</h1>
 
-<table width="40%">
-	<tr bgcolor="silver">
+
+<table width="40%" border="2">
+	<tr bgcolor="#95B9C7">
 		<th> username</th>
-		<th> age</th>
+		<th> age (an(s))</th>
 		<th> famille</th>
 		<th> race</th>
 		<th> nourriture</th>
@@ -11,7 +12,7 @@
 
 {% for item in result %}
  
- <tr>
+ <tr bgcolor="silver">
   	<td>{{item.username}}</td> 
  	<td>{{item.age}} </td>
  	<td>{{item.famille}}</td> 
@@ -20,3 +21,7 @@
 </tr>
 {% endfor %}
 </table>
+</br><input type="button" name="valider" 
+       value="Valider les modifications" onclick="#" 
+       style="background-color:#C2DFFF" 
+       style="color:white; font-weight:bold"onclick>

@@ -39,11 +39,77 @@ class User extends BaseUser
     */
     protected $nourriture;
 
+
+    
+    // /**
+    //*@ORM\Column(type="array")
+    //*/
+     //protected $friends;
+
+    // /**
+    // *@ORM\Column(type="array")
+    // */
+    // protected $friendsWithMe;
+
     public function __construct()
     {
         parent::__construct();
-        // your own logic
+        // your own logic 
+        //$this->friends = array();
+        //$this->friendsWithMe= array();
     }
+
+    // /**
+    // *addFriend
+    // *@param \AppBundle\Entity\User
+    // *@return User
+    // */
+
+    // public function addFriend(\AppBundle\Entity\User $friend)
+    // {
+    //     $this->friends[]=$friend;
+    //     return $this;
+    // }
+
+
+    // /**
+    // *removeFriend
+    // *@param \AppBundle\Entity\User
+    // */
+    //  public function removeFriend(\AppBundle\Entity\User $friend)
+    // {
+    //     $this->friends->removeElement($friend);
+    // }
+
+    // /**
+    // *getFriends
+    // *@return \Doctrine\Common\Collections\Collection
+    // */
+    //  public function getFriends()
+    // {
+    //     return $this->friends;    }
+
+    
+    // /**
+    // *hasFriend
+    // *@param \AppBundle\Entity\User
+    // *@return boolean
+    // */     
+    // public function hasFriend(\AppBundle\Entity\User $friend)
+    // {
+    //      return $this->friends->contains($friend);
+    // }
+
+    // /**
+    // *canAddFriend 
+    // *@param \AppBundle\Entity\User
+    // *@return boolean
+    // */ 
+    // public function canAddFriend(\AppBundle\Entity\User $friend)
+    // {
+    //     return ($this!= $friends) && (!$this->hasFriend($friend));
+    // }
+
 
     /**
      * Set age

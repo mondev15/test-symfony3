@@ -10,8 +10,8 @@
 		<li> <a href="{{path('fos_user_security_logout')}}">Se déconnecter </a></li>
 		<li> <a href="{{path('fos_user_profile_show')}}"> Vous êtes connecté (cliquez pour voir le profil) </a></li>
 		{% else %}
-		<li> <a href="{{path('fos_user_registration_register')}}">S'enregistrer </a> </li>
- 		<li> <a href="{{path('fos_user_security_login')}}">Se connecter </a> </li>
+		<li> <b><a href="{{path('fos_user_registration_register')}}">S'enregistrer </a> </b></li> <br>
+ 		<li> <b><a href="{{path('fos_user_security_login')}}">Se connecter </a> </b></li>
          {% endif %}
 	</ul>
 </li>

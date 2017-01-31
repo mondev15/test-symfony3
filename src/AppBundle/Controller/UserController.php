@@ -8,6 +8,7 @@ use Symfony\Component\HttpFoundation\Request;
 
 
 class UserController extends Controller{
+    
     /**
      * @Route("/home", name="home")
      */
@@ -53,4 +54,5 @@ class UserController extends Controller{
    // the result is in $user and will be printed  in twig
    return $this->render('default/display.html.twig', array('result' => $userData));
    }
- }
+
+} 
